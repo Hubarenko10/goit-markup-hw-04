@@ -125,10 +125,11 @@ img{
   padding-top: 32px;
   padding-bottom: 32px;
   
+  
 }
 .contact-list-item{
-  display: flex;
-  align-items: center;
+  display: inline-flex;
+  
 }
 
 .contact-list-icon{
@@ -216,11 +217,13 @@ img{
   border: none;
   background-color: rgba(245, 244, 250, 1);
   align-items: center;
+  border-radius: 4px;
   
 }
 .list-ben-icon{
   width: 70px;
   height: 70px;
+  
 }
 .benefits-title {
   color: var(--primary-text-color);
@@ -292,7 +295,7 @@ img{
   padding: 0;
   width: 44px;
   height: 44px;
-  border-color: black;
+  border-color: transparent;
   background-color: var(--primary-white-color);
   border-radius: 50%;
   color:rgba(175, 177, 184, 1);
@@ -306,8 +309,10 @@ img{
   height: 20px;
   fill: currentColor; 
 }
-.social-icon:hover{
+.social-btn:hover{
   background-color: var(--accent-color);
+}
+.social-icon:hover{
   fill: var(--primary-white-color);
 }
 .team-list{
@@ -349,7 +354,54 @@ padding-top: 30px;
   letter-spacing: 0.03em;
   
 }
+/*clients*/
+.clients{
+ 
+  align-items: center;
+}
+.client-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.clients-list{
+display: flex;
 
+}
+.client-list-item{
+
+}
+.client-btn{
+  width: 170px;
+  height: 92px;
+  border:1px solid #AFB1B8;
+  border-radius: 4px;
+  
+  
+}
+/*.client-btn:not(:last-child){
+  margin-right: 30px;
+}*/
+.client-btn-icon{
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+}
+.client-btn:hover{
+  border-color: var(--accent-color);
+}
+.client-btn-icon:hover{
+  fill: var(--accent-color);
+  
+}
+.first,.second,.third,.fourth,.fifth{
+  margin-right: 30px;
+}
 /*footer*/
 .footer {
   background-color: var(--backround-color);
