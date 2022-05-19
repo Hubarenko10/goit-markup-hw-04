@@ -285,13 +285,13 @@ img {
 .social {
 	width: 44px;
 	height: 44px;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 }
 .social:not(:last-child) {
 	margin-right: 10px;
 }
-.social:hover,
-.social:focus {
+.social-link:hover,
+.social-link:focus {
 	background-color: var(--accent-color);
 }
 .social-link {
@@ -301,7 +301,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	border: none;
+	/*border: none;*/
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
@@ -481,6 +481,7 @@ img {
 	height: 20px;
 	fill: currentColor;
 }
-.footer-btn:hover {
+.footer-btn:hover,
+.footer-btn:focus {
 	background-color: var(--accent-color);
 }
