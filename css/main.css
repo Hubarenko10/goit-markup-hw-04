@@ -1,9 +1,11 @@
 :root {
-	--primary-text-color: #212121;
-	--secondary-text-color: #757575;
-	--primary-white-color: #ffffff;
-	--accent-color: #2196f3;
-	--backround-color: #2f303a;
+  --duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --accent-color: #2196f3;
+  --backround-color: #2f303a;
 }
 body {
 	background-color: var(--primary-white-color);
@@ -205,8 +207,6 @@ img {
 
 }
 .backdrop{
-	/*opacity: 0;
-	pointer-events: none;*/
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.2);
 	width: 100%;
@@ -233,7 +233,6 @@ img {
 	border-radius: 4px;
 }
 .modal-btn{
-	position: absolute;
 	position: absolute;
 	width: 30px;
 	height: 30px;
