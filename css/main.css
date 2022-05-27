@@ -121,6 +121,7 @@ img {
 
 .site-nav-link {
 	position: relative;
+	transition: color var(--duration) var(--timing-function);
 }
 
 .site-nav-link:hover,
@@ -180,12 +181,14 @@ img {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	display: flex;
+	transition: color var(--duration) var(--timing-function);
 }
 
 .contact-link:hover,
 .contact-link:focus,
 .contact-list-icon:hover {
-	color: var(--accent-color);
+color: var(--accent-color);
+transition: transform var(--duration) var(--timing-function);
 }
 /*main*/
 .hero {
@@ -214,6 +217,9 @@ img {
 	left: 0px;
 	top: 0px;
 	z-index: 1;
+	transition: opacity var(--duration) var(--timing-function),
+			visibility var(--duration) var(--timing-function);
+	
 }
 .backdrop.is-hidden{
 	opacity: 0;
@@ -231,6 +237,10 @@ img {
 	transform: translate(-50%, -45%);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
+	transition: transform var(--duration) var(--timing-function);
+}
+.backdrop.is-hidden .modal-wrapper {
+	transform: translate(-50%, -50%) scale(0.5);
 }
 .modal-btn{
 	position: absolute;
@@ -246,6 +256,7 @@ img {
 	cursor: pointer;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: transparent;
+
 }
 .hero-title {
 	color: var(--primary-white-color);
@@ -403,6 +414,7 @@ img {
 .social-link:hover,
 .social-link:focus {
 	background-color: var(--accent-color);
+	transition: fill var(--duration) var(--timing-function);
 }
 .social-link {
 	width: 100%;
@@ -411,17 +423,20 @@ img {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	/*border: none;*/
+	transition: background-color var(--duration) var(--timing-function);
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
 	fill: var(--primary-white-color);
+	transition: transform var(--duration) var(--timing-function);
 }
 
 .social-icon {
 	width: 20px;
 	height: 20px;
 	fill: #afb1b8;
+	transition: fill var(--duration) var(--timing-function);
+	
 }
 .team-list {
 	display: flex;
@@ -496,19 +511,22 @@ img {
 	align-items: center;
 	width: 100%;
 	height: 100%;
+	transition: border-color var(--duration) var(--timing-function);
 }
 .client-btn-icon {
 	width: 106px;
 	height: 60px;
 	fill: #afb1b8;
+	transition: fill var(--duration) var(--timing-function);
 }
 .client-btn:hover .client-btn-icon,
 .client-btn:focus .client-btn-icon {
 	fill: var(--accent-color);
 }
-.client-list-item:hover,
+.client-list-item:hover,	
 .client-list-item:focus {
 	border-color: var(--accent-color);
+	
 }
 
 /*footer*/
@@ -585,13 +603,16 @@ img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: background-color var(--duration) var(--timing-function);
 }
 .footer-icon {
 	width: 20px;
 	height: 20px;
 	fill: currentColor;
+	transition: fill var(--duration) var(--timing-function);
 }
 .footer-btn:hover,
 .footer-btn:focus {
 	background-color: var(--accent-color);
+	transition: transform var(--duration) var(--timing-function);
 }
